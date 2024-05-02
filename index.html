@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rony Calderon">
+    <!-- Title -->
+    <title>Weather Forecast App</title>
+    <!-- Styles and Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Main Container -->
+    <div class="container mt-5">
+        <!-- Title -->
+        <h1>Weather Forecast</h1>
+        <!-- Form -->
+        <form action="">
+            <!-- Location Input -->
+            <div class="form-group">
+                <!-- Label -->
+                <label for="location">Enter Location:</label>
+                <!-- Input -->
+                <input type="text" id="location" class="form-control" autofocus>
+            </div>
+            <!-- Get Weather Button -->
+            <button id="getWeather" class="btn btn-primary" type="submit">Get Weather</button>
+        </form>
+        <!-- Weather Result -->
+        <div id="weatherResult" class="mt-1"></div>
+        <!-- Forecast Container -->
+        <div class="container mt-3 d-none" id="forecastContainer">
+            <!-- Title -->
+            <h1>Weather For the Next 7 Days</h1>
+            <!-- Tabs -->
+            <ul class="nav nav-tabs" id="forecastTabs"></ul>
+            <!-- Tab Content -->
+            <div class="tab-content" id="tabContent"></div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="./js/app.js"></script>
+</body>
+</html>
